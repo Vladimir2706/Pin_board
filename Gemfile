@@ -23,6 +23,7 @@ gem 'simple_form', '~> 3.5', '>= 3.5.1'
 gem 'devise', '~> 4.4', '>= 4.4.1'
 gem 'paperclip', '~> 5.2', '>= 5.2.1'
 gem 'masonry-rails', '~> 0.2.4'
+gem 'acts_as_votable', '~> 0.11.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -31,10 +32,10 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'spring'
+  gem 'spring', '~> 2.0', '>= 2.0.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'web-console', '>= 3.3.0'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
